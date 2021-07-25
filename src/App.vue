@@ -1,11 +1,11 @@
 <template>
-  <div id="app" class="container m-0 p-0">
-    <div class="row my-5">
+  <div id="app" class="container mx-auto p-0 w-100">
+    <div class="row bg-primary py-3">
       <div class="col">
         <the-header></the-header> 
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
       <the-navigation></the-navigation>
       <div class="col-9">
        <router-view />

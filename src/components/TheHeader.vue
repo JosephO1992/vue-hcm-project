@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center text-light">
     <h1>Joe's Awesome HCM Product</h1>
   </div>
 </template>

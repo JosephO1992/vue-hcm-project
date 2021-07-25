@@ -4,7 +4,6 @@
         <ul class="list-group">
             <staff-item v-for="staff in allStaff" :key="staff.id" :staff="staff"></staff-item>         
         </ul>
-    {{test}}
     </div>
 </template>
 
