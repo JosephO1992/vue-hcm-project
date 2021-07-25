@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="container m-0 p-0">
+    <div class="row my-5">
+      <div class="col">
+        <the-header></the-header> 
+      </div>
     </div>
-    <router-view/>
+    <div class="row">
+      <the-navigation></the-navigation>
+      <div class="col-9">
+       <router-view />
+      </div>
+    </div>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import TheHeader from './components/TheHeader.vue';
+import TheNavigation from './components/TheNavigation.vue';
 
-#nav {
-  padding: 30px;
+export default {
+  components: {
+    TheHeader,
+    TheNavigation
+  }
 }
+</script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>

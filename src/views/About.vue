@@ -1,5 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h2>About This HCM</h2>
+    <p>This is me creating a HCM to push my dev skills. I want to take this chance to practice with VueX, Vue Router and get some testing in built</p>
   </div>
 </template>
