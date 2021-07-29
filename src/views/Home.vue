@@ -7,6 +7,9 @@
     <p>
       Total salary spend: ${{countSalary}}
     </p>
+    <p>
+      {{this.$attrs.name}}
+    </p>
   </div>
 </template>
 
