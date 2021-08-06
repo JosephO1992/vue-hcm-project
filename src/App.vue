@@ -1,6 +1,6 @@
 <template>
-  <div id="app" class="container mx-auto p-0 w-100">
-    <div class="row bg-primary py-3">
+  <div id="app" class="container mx-auto mw-100 p-0 bg-info text-light vh-100">
+    <div class="row py-3">
       <div class="col">
         <the-header></the-header> 
       </div>

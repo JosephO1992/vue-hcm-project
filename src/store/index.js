@@ -19,10 +19,16 @@ export default new Vuex.Store({
         salary: 30000
       },
       {
-        id: 2,
+        id: 3,
         firstName: "James",
         lastName: "Hutchinson",
         salary: 27000
+      },
+      {
+        id: 4,
+        firstName: "Jason",
+        lastName: "Crooks",
+        salary: 26000
       }
     ]
   },
