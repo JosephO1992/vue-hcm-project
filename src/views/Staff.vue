@@ -1,8 +1,9 @@
 <template>
-    <div>
+    <div class="">
      <h2>Staff Page</h2>
-        <ul class="list-group">
-            <staff-item v-for="staff in allStaff" :key="staff.id" :staff="staff"></staff-item>         
+        <ul class="list-group text-dark" >
+            <staff-item :staff="staff" v-for="staff in allStaff" :key="staff.id">
+            </staff-item>         
         </ul>
     </div>
 </template>

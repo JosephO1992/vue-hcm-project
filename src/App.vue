@@ -12,9 +12,9 @@
           
         </div>
         <div class="row">
-          <div class="col-9">
+          <!-- <div class="col-9">
             <add-staff></add-staff>
-          </div>
+          </div> -->
           <div class="col-9">
             <transition name="slide-fade">
               <router-view />
@@ -45,15 +45,16 @@ export default {
 
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
-.slide-fade-enter-active {
+/* .slide-fade-enter-active {
   transition: all .8s ease;
 }
 .slide-fade-leave-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
+.slide-fade-enter, .slide-fade-leave-to */
+/* .slide-fade-leave-active below version 2.1.8 */ 
+/* {
   transform: translateX(10px);
   opacity: 0;
-}
+} */
 </style>
