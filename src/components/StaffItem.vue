@@ -13,7 +13,6 @@
 					{{ staff.firstName }} {{ staff.lastName }}
 				</h3>
 			</router-link>
-te
 			<input
 				v-if="editing"
 				v-model="staff.firstName"
