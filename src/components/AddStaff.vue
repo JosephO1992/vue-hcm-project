@@ -2,7 +2,7 @@
     <div>
         <div class="d-flex justify-content-between align-items-center">
             <h2>Add Staff</h2>
-            <div><button class="btn btn-primary" @click="showForm">{{!staffFormShowing ? '+' : '-'}}</button></div>
+            <!-- <div><button class="btn btn-primary" @click="showForm">{{!staffFormShowing ? '+' : '-'}}</button></div> -->
         </div>
         <form @submit.prevent="onAddStaff" v-if="staffFormShowing" >
             <div class="form-group">
@@ -27,10 +27,10 @@
 export default {
     data() {
         return {
-            staffFormShowing: false,
+            staffFormShowing: true,
             firstName: '',
             surName: '',
-            salary: ''
+            salary: '',
         }
     },
     methods: {

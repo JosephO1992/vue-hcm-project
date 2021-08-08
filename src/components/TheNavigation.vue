@@ -10,6 +10,9 @@
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <router-link to="/about">About</router-link> 
             </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <router-link to="/addStaff">About</router-link> 
+            </li>
           </ul>
       </nav>
 </template>

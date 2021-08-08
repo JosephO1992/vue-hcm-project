@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Staff from '../views/Staff.vue'
-import StaffProfile from '../components/StaffProfile'
+import StaffProfile from '../components/StaffProfile';
+import AddStaff from '../components/AddStaff'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,10 @@ const routes = [
     component: StaffProfile,
     name: 'StaffDetails',
     props: true
+  },
+  {
+    path: '/addStaff',
+    component: AddStaff
   }
 ]
  
