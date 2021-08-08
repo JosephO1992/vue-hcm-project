@@ -6,6 +6,8 @@
 					name: 'StaffDetails',
 					params: {
 						id: staff.id,
+                        firstName: staff.firstName,
+                        lastName: staff.lastName
 					},
 				}"
 			>
