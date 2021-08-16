@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Staff from '../views/Staff.vue'
 import StaffProfile from '../components/StaffProfile';
 import AddStaff from '../components/AddStaff'
+import Auth from '../components/Auth'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     props: {
       name: 'Joe'
     }
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Auth
   },
   {
     path: '/staff',

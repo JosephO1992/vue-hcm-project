@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h2>User Dashboard</h2>
+    <h2>User Dashboard </h2>
     <p>
       Total staff members: {{countStaff}}
     </p>
