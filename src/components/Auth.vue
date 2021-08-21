@@ -24,32 +24,35 @@
 </template>
 
 <script>
-import { ref } from "vue"
+
 import { supabase } from "../supabase"
 
 export default {
-  setup() {
-    const loading = ref(false)
-    const email = ref("")
-
-    const handleLogin = async () => {
+    data () {
+        return {
+            loading: false,
+            email: ""
+        }
+    },
+  methods: {
+    
+    async handleLogin() {
       try {
-        loading.value = true
-        const { error } = await supabase.auth.signIn({ email: email.value })
+        this.loading = true
+        const { error } = await supabase.auth.signIn({ email: this.email })
         if (error) throw error
         alert("Check your email for the login link!")
       } catch (error) {
         alert(error.error_description || error.message)
       } finally {
-        loading.value = false
+        this.loading = false;
+        this.email = "";
       }
+      
+    
     }
 
-    return {
-      loading,
-      email,
-      handleLogin,
-    }
+   
   },
 }
 </script>
